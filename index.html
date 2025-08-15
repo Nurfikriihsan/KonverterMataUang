@@ -26,9 +26,7 @@
             <div class="currency-row">
                 <div class="currency-col">
                     <label for="from-currency">Dari Mata Uang</label>
-                    <select id="from-currency">
-                        <!-- Daftar mata uang akan ditambahkan oleh JavaScript -->
-                    </select>
+                    <select id="from-currency"></select>
                 </div>
 
                 <div class="switch-currencies">
@@ -42,9 +40,7 @@
 
                 <div class="currency-col">
                     <label for="to-currency">Ke Mata Uang</label>
-                    <select id="to-currency">
-                        <!-- Daftar mata uang akan ditambahkan oleh JavaScript -->
-                    </select>
+                    <select id="to-currency"></select>
                 </div>
             </div>
 
@@ -74,9 +70,7 @@
         <!-- Mata Uang Populer -->
         <div class="card">
             <h2>Mata Uang Populer</h2>
-            <div class="popular-currencies" id="popular-currencies">
-                <!-- Daftar mata uang populer akan ditambahkan oleh JavaScript -->
-            </div>
+            <div class="popular-currencies" id="popular-currencies"></div>
         </div>
 
         <!-- Grafik Kurs Historis -->
@@ -91,8 +85,13 @@
         <p>&copy; 2025 Konverter Mata Uang | Dibuat dengan ❤️</p>
     </footer>
 
-    <!-- Import Library Chart.js untuk Grafik -->
+    <!-- Import Library Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <!-- Config API Key (lokal, tidak di-push) -->
+    <script src="config.js"></script>
+
+    <!-- Script utama -->
     <script src="script.js"></script>
 </body>
 
